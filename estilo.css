@@ -1,0 +1,32 @@
+.botonRojo{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
+
+.botonAmarillo{
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+}
+
+.botonAzul{
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+}
+
+body.activo1{
+    background-color: red;
+
+}
+
+body.activo2{
+    background-color: yellow;
+
+}
+
+body.activo3{
+    background-color: blue;
+
+}
