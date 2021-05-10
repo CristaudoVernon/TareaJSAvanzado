@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body class="colorBody">
+    <div><button class="botonRojo"></button></div>
+    <div><button class="botonAmarillo"></button></div>
+    <div><button class="botonAzul"></button></div>
+
+    <script>
+        /*Cree las variables para alternar cada color por ej:
+        alternarRojo es igual a... en el 'documento.' 'traeme los elementos con la clase' ("botonRojo) y el [0]
+        es para que me agarre el primer "item" de ese array fantasma que hace al hacer esto.*/
+        var alternarRojo = document.getElementsByClassName("botonRojo")[0]; //ojo al piojo porque por el hecho de ser elementsSSSSSS devuelve una coleccion que es como una especie de array.
+        var alternarAmarillo = document.getElementsByClassName("botonAmarillo")[0];
+        var alternarAzul = document.getElementsByClassName("botonAzul")[0];
+        var alternarBody = document.getElementsByClassName("colorBody")[0];
+
+        alternarRojo.addEventListener('click', // Para la variable "alternarRojo." le agrego un 'EventListener' que al 'clickear'...
+        function(e) { //... haga este evento:
+            alternarBody.classList.toggle('activo1') // llamo al "alternarBody.", le clavo un 'classList' para usar el 'toggle' y que le agregue y desagregue la clase "activo1"
+            
+        });// y que va a hacer todo este choclito en criollo? al clickear hace el evento que agregue o saque el color al fondo mediante un boton con clase "botonRojo" en el CSS
+            // fijate que en el estilo.css llamaste al body.activo1 para este caso, esto hace que se le agregue eso.
+
+        alternarAmarillo.addEventListener('click', 
+        function(e) {
+            alternarBody.classList.toggle('activo2')
+            
+        });
+
+        alternarAzul.addEventListener('click', 
+        function(e) {
+            alternarBody.classList.toggle('activo3')
+            
+        });
+    </script>
+</body>
+</html>
